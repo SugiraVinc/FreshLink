@@ -1,0 +1,288 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #f9f9f9;
+}
+header{
+    /* Header */
+position: relative;
+background: #042603;
+
+
+}
+
+.logo{
+    /* FreshLink Logo OG 1 */
+
+
+
+width: 54px;
+height: 67px;
+left: 10px;
+margin-right: auto;
+padding-top: 20px;
+}
+
+.NavigationBar{
+    list-style: none; 
+    display: flex;
+    margin: 0px auto; 
+
+}
+
+.items{
+    padding-right: 20px;
+    padding-top: 40px;
+    margin-right: 20px;
+    
+    
+}
+
+.items a{
+    color: white;
+    text-decoration: none;
+    width: 100%;
+} 
+
+.items a:hover{
+    color: yellow;
+}
+
+
+.AboutUs{
+    /* ABOUT US */
+
+
+position: absolute;
+width: 200px;
+height: 23px;
+left: 34px;
+top: 0px;
+
+font-family: 'Times New Roman', Times, serif;
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 29px;
+
+color: #042603;
+
+
+}
+
+.About p{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    left: 20px;
+    top: 50px;
+    
+    font-family:  'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    
+    color: #000000; 
+}
+
+.About{
+    position: absolute;
+    width: 100%;
+    height: 275px;
+    background-color: whitesmoke;
+}
+
+.services{
+    /* Services section */
+
+
+box-sizing: border-box;
+position: relative;
+width: 100%;
+height: 340px;
+border-radius: 2px;
+top: 150px;
+background-color: whitesmoke;
+
+}
+.services h2{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 700;
+    color: #042603;
+    text-align: center;
+}
+
+.BuySell img{
+    /* Buy and sell logo */
+
+
+position: absolute;
+width: 300px;
+height: 300px;
+left: 97px;
+top: 7px;
+
+
+}
+
+.BuySell p{
+    /* Buy and Sell */
+
+
+position: absolute;
+width: 224px;
+height: 37px;
+left: 152px;
+top: 290px;
+
+font-family: 'Times New Roman', Times, serif;
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 44px;
+
+color: #000000;
+
+}
+
+.Networking img{
+    /* Handshake (1) 1 */
+
+
+position: absolute;
+width: 300px;
+height: 300px;
+left: 531px;
+top: 21px;
+
+}
+
+.Networking p{
+    /* Network */
+
+
+position: absolute;
+width: 168px;
+height: 37px;
+left: 645px;
+top: 290px;
+
+font-family: 'Times New Roman', Times, serif;
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 44px;
+
+color: #000000;
+
+}
+
+.Training img{
+    /* Training 1 */
+
+
+position: absolute;
+width: 300px;
+height: 300px;
+left: 979px;
+top: 7px;
+}
+
+.Training p{
+    /* Train */
+
+
+position: absolute;
+width: 168px;
+height: 37px;
+left: 1102px;
+top: 290px;
+
+font-family: 'Times New Roman', Times, serif;
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 44px;
+
+color: #000000;
+}
+
+.team{
+    position: relative;
+    background: #042603;
+    margin-top: 150px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    
+    
+}
+
+.Elsie img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.elsie p{
+    text-align: center;
+}
+
+
+.Sugira img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.Sugira p{
+    text-align: center;
+}
+
+.Stephen img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.Stephen p{
+    text-align: center;
+}
+
+
+.Husna img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.Husna p{
+    text-align: center;
+}
+
+.Fred img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.Fred p{
+    text-align: center;
+}

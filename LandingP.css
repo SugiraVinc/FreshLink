@@ -1,22 +1,17 @@
 /* Reset styles */
-* {
+body,html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
 
-body{
-    position: fixed;
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    background-color: #f9f9f9;
-}
+ 
+
 header{
     /* Header */
 position: relative;
 background: #042603;
+width: 100%;
 
 
 }
@@ -58,6 +53,13 @@ padding-top: 20px;
     color: yellow;
 }
 
+.About{
+    position: absolute;
+    width: 100%;
+    height: 275px;
+    background-color: whitesmoke;
+}
+
 
 .AboutUs{
     /* ABOUT US */
@@ -96,24 +98,19 @@ color: #042603;
     color: #000000; 
 }
 
-.About{
-    position: absolute;
-    width: 100%;
-    height: 275px;
-    background-color: whitesmoke;
-}
+
 
 .services{
     /* Services section */
 
-
 box-sizing: border-box;
 position: relative;
 width: 100%;
-height: 340px;
-border-radius: 2px;
+height: 300px;
 top: 150px;
 background-color: whitesmoke;
+justify-content: center;
+align-items: center;
 
 }
 .services h2{
@@ -123,6 +120,7 @@ background-color: whitesmoke;
     font-weight: 700;
     color: #042603;
     text-align: center;
+
 }
 
 .BuySell img{
@@ -130,8 +128,8 @@ background-color: whitesmoke;
 
 
 position: absolute;
-width: 300px;
-height: 300px;
+width: 200px;
+height: 200px;
 left: 97px;
 top: 7px;
 
@@ -146,7 +144,7 @@ position: absolute;
 width: 224px;
 height: 37px;
 left: 152px;
-top: 290px;
+top: 200px;
 
 font-family: 'Times New Roman', Times, serif;
 font-style: normal;
@@ -163,8 +161,8 @@ color: #000000;
 
 
 position: absolute;
-width: 300px;
-height: 300px;
+width: 200px;
+height: 200px;
 left: 531px;
 top: 21px;
 
@@ -178,7 +176,7 @@ position: absolute;
 width: 168px;
 height: 37px;
 left: 645px;
-top: 290px;
+top: 200px;
 
 font-family: 'Times New Roman', Times, serif;
 font-style: normal;
@@ -195,8 +193,8 @@ color: #000000;
 
 
 position: absolute;
-width: 300px;
-height: 300px;
+width: 200px;
+height: 200px;
 left: 979px;
 top: 7px;
 }
@@ -209,7 +207,7 @@ position: absolute;
 width: 168px;
 height: 37px;
 left: 1102px;
-top: 290px;
+top: 200px;
 
 font-family: 'Times New Roman', Times, serif;
 font-style: normal;
@@ -220,16 +218,113 @@ line-height: 44px;
 color: #000000;
 }
 
+.video{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 250px;
+    top: 562px;
+    background: #042603;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img {
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    border: 1px solid red;
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
+    transition: all .5s;
+  }
+
+  .img:hover {
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, .2);
+    opacity: .7;
+  }
+
+  .img::before, .img::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+  }
+
+  .img::before {
+    width: 48px;
+    height: 48px;
+    margin: -24px 0 0 -24px;
+    background-color: #333;
+    border-radius: 50%;
+
+  }
+
+  .img::after {
+    margin: -8px 0 0 -6px;
+    border-style: solid;
+    border-width: 8px 0 8px 16px;
+    border-color: transparent transparent transparent #fff;
+  }
+
+
+.img img{
+    width: 300px;
+   object-fit: cover;
+   vertical-align: baseline;
+
+}
+/*.wplightbox{
+    background:#042603;
+    height: 450px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+} 
+
+
+
+.lightboxContainer {
+    position:relative;
+
+  }
+   
+  .lightboxContainer:after {
+    content:url("https://www.wonderplugin.com/download/playbutton.png");
+    z-index:999;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left:-32px;
+    margin-top:-32px;
+    opacity:0.8;
+  }
+   
+  .lightboxContainer:hover:after {
+    opacity:1;
+  }
+   
+  .lightboxContainer img {
+    width: 250px;
+  }*/
+  
+
 .team{
     position: relative;
-    background: #042603;
-    margin-top: 150px;
+    background: whitesmoke;
+    margin-top: 400px;
     width: 100%;
-    height: 200px;
+    height: 220px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
+    border: 1px solid yellow;
 
     
     

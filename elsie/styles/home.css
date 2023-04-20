@@ -4,13 +4,18 @@
     box-sizing: border-box;
     font-family: 'Poppins', 'sans-serif';
   }
+
+  :root{
+    --color:#162918;
+  }
+
   
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url("..//images/Free\ \ Green\ Abstract\ Wave\ Background\ Vector\ Art\ \(1\).jpeg") no-repeat;
+    background: url("../images/Free\ \ Green\ Abstract\ Wave\ Background\ Vector\ Art\ \(1\).jpeg") no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -81,3 +86,48 @@ header {
     background: #fff;
     color: #162918;
 } 
+
+input{
+    display: none;
+}
+
+label{
+    z-index: 2;
+    position: absolute;
+    top: 30px; right: 10px;
+    cursor: pointer;
+}
+
+label span{
+    display: block;
+    height: 3px;
+    width: 30px;
+    background: var(--color);
+    margin:5px 0;
+    transition: .3s;
+}
+
+label span:nth-child(1){
+    margin-left: 20px;
+}
+
+label span:nth-child(2){
+    width: 50px;
+}
+ 
+@media (max-width:978px) {
+    label{
+        display: block;
+    }
+}
+
+.navigation a{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0; left: 0; 
+    background: var(--color);
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}

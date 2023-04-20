@@ -11,7 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url("background.jpeg") no-repeat;
+    background: url("../images/background.jpeg") no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -80,7 +80,7 @@ header {
 
 .navigation .btnLogin-popup:hover {
     background: #fff;
-    color: #13eb29;
+    color: #162918;
 }
 
 .wrapper {
@@ -95,9 +95,15 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-   overflow: hidden;
-    transition: height .2s ease;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform .5s ease , height .2s ease;
 }
+
+.wrapper.active-popup {
+    transform: scale(1);
+}
+
 
 .wrapper.active {
     height: 520px;

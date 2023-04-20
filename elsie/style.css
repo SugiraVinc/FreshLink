@@ -105,6 +105,10 @@ header {
     padding: 40px;
 }
 
+.wrapper .form-box.login {
+   /* display: none;*/
+}
+
 .wrapper .form-box.register {
     position: absolute;
     transition: none;

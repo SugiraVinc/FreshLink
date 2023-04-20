@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+  }
+  body {
+    min-height: 100vh;
+    background-color:cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  header { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+  }
+  .logo {
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+}
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover:after {
+    transform-origin: left;
+    transform: scaleX(1);
+
+}
+
+.navigation .btnLogin-popup {
+     width: 130px;
+     height: 50px;
+     background: transparent;
+     border: 2px solid #fff;
+     outline: none;
+     border-radius: 6px;
+     cursor: pointer;
+     font-size: 1.1em;
+     color: #fff;
+     font-weight: 500;
+     margin-left: 40px;
+     transition: .5s;
+}
+
+.navigation .btnLogin-popup:hover {
+    background: #fff;
+    color: #162918;
+}
+main > :first-child{
+    padding: 5em 0;
+    background-image: url(../images/section-one.jpeg);
+    background-size: cover;
+    background-position: center;
+    color: aliceblue;
+}
+h1{
+    font-size: 7rem;
+    text-align: center;
+}
+main > :first-child fieldset{
+    width: 30%;
+    margin: 0 auto;
+    padding: 3.5em;
+}
+main > :first-child fieldset legend{
+    margin: 0 auto;
+    padding: .5em;
+    text-align: center;
+    font-weight: 600;
+}
+.sec-2{
+    background-image: url(../images/section-two.jpeg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2em;
+    align-items: center;
+    padding: 2em;
+    color: #162918;
+}
+.sec-2 p,.sec-2 div div{
+    font-weight: 700;
+}
+.sec-2 h2{
+    font-size: 2.5em;
+}
+h3{
+    font-size: 1.6em;
+}
+.sec-2 p{
+    width: 55%;
+}
+.sec-2>div{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+}
+.sec-4{
+    background-image: url(../images/section-three.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    color: #162918;
+}
+.sec4-div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.sec4-div div{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    background: rgba(255, 255, 255, .5);
+    padding: 1em;
+    border: 2px solid #162918;
+    border-radius: 10%;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+}
+
+ion-icon{
+    font-size: 6rem;
+    font-weight: 100;
+    text-align: center;
+}
+.sec-4 fieldset{
+    width: 30%;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, .5);
+    border: 2px solid #162918;
+    border-radius: 10px;
+}
+.sec-4 fieldset legend{
+    margin: 0 auto;
+    padding: .5em;
+    text-align: center;
+    font-weight: 600;
+}
+.sec-4 fieldset p{
+    padding: 3.5em;
+    font-weight: 700;
+}
+.sec4-div p{
+    font-weight: 700;
+}
+.btn{
+    width: 130px;
+     height: 50px;
+     background: #162918;
+     border: 2px solid #fff;
+     outline: none;
+     border-radius: 6px;
+     cursor: pointer;
+     font-size: 1.1em;
+     color: #fff;
+     font-weight: 500;
+     transition: .5s;
+
+}
+.btn:hover{
+    background: #fff;
+    color: #162918;
+}

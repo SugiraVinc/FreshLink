@@ -458,7 +458,7 @@ top: 7px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: px;
     border: 1px solid yellow;
     top: 413px;
 }

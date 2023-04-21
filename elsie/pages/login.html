@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website with login & Registration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../styles/login.css">
 </head>
 <body>
@@ -18,65 +19,90 @@
             <button class="btnLogin-popup">Login</button>
         </nav> 
     </header>
-
-    <div class="wrapper">
-        <span class="icon-close"><ion-icon name="close"></ion-icon></span>
-        <div class="form-box login">
-            <h2>Login</h2>
-            <form action="#">
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                    <input type="email" required>
-                    <label>Email</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input type="password" required>
-                    <label>Password</label>
-                </div>
-                <div class="remember-forgot">
-                    <label><input type="checkbox"> Remember me</label>
-                    <a href="#">Forgot Password?</a>
-                </div>
-                <button type="submit" class="btn">Login</button>
-                <div class="login-register">
-                <p>Don't have an account? <a 
-                href="#"
-                class="register-link">Register</a></p>   
-                </div>
-            </form>
+    <main>
+        <div class="wrapper">
+            <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                    <p>Don't have an account? <a 
+                    href="#"
+                    class="register-link">Register</a></p>   
+                    </div>
+                </form>
+            </div>
+    
+            <div class="form-box register">
+                <h2>Registration</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> I agree to the terms & conditions</label>
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                    <div class="login-register">
+                    <p>Already have an account? <a 
+                    href="#"
+                    class="login-link">Login</a></p>   
+                    </div>
+                </form>
+            </div>
         </div>
-
-        <div class="form-box register">
-            <h2>Registration</h2>
-            <form action="#">
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="person"></ion-icon></span>
-                    <input type="text" required>
-                    <label>Username</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                    <input type="email" required>
-                    <label>Email</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input type="password" required>
-                    <label>Password</label>
-                </div>
-                <div class="remember-forgot">
-                    <label><input type="checkbox"> I agree to the terms & conditions</label>
-                </div>
-                <button type="submit" class="btn">Register</button>
-                <div class="login-register">
-                <p>Already have an account? <a 
-                href="#"
-                class="login-link">Login</a></p>   
-                </div>
-            </form>
+    </main>
+    
+    <footer class="footer">
+        <div class="contact-nav">          
+            <div id="contact">
+                <!--https://www.geeksforgeeks.org/difference-between-hidden-and-aria-hidden-attributes-in-html/-->
+                <p><a href="tel:+250-787-771-750" aria-hidden="true" >Phone: +250787771750</a></p>
+                <p><a href="mailto:freshlink@gmail.com" aria-hidden="true" target="_blank">Email: freshlink@gmail.com</a></p>
+            </div>
+            <nav class="navigation">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </nav>  
+            <div id="social">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"> &nbsp; Facebook </i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true" target="_blank"> &nbsp; Twitter </i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true" target="_blank"> &nbsp; Instagram </i></a>
+            </div>
         </div>
-    </div>
+        <div class="copyright">
+            <p><span style="color:white; font-weight: bold">Copyright</span> <span style="color: yellowgreen; font-weight: bold;">© 2023 FreshLink</span>  <span style="color:white; font-weight: bold">All rights reserved</span></p>
+        </div>
+    </footer>
     <script src="../scripts/login.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

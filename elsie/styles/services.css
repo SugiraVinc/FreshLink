@@ -140,3 +140,7 @@ footer .contact-nav{
     align-items: center;
     gap: 2em;
 }
+
+.price{
+    color: #fff;
+}

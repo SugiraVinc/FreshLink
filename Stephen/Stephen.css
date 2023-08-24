@@ -10,7 +10,7 @@
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    background-color: #f9f9f9;
+    background-color: yellow;
   }
   
   header {
@@ -19,15 +19,19 @@
   
   nav ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    text-align: center;
     list-style: none;
     margin: 0;
     padding: 10px 20px;
   }
+
   
+  /*
   nav ul li {
-    flex: 1;
+    flex: 0.5;
   }
+  */
   
   nav ul li a {
     color: #fff;
@@ -47,16 +51,16 @@
   
   .sign-in,
   .sign-up {
-    background-color: #fff;
+    background-color: green;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     padding: 20px;
     text-align: center;
-    width: 400px;
+    width: 50%;
   }
   
   .sign-up {
-    margin-left: 20px;
+    margin-left: 25%;
   }
   
   .sign-in h2,
@@ -69,6 +73,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  
   }
   
   .sign-in label,
@@ -104,6 +109,24 @@
   .sign-up button:hover {
     background-color: #555;
   }
+
+  .signup{
+    background-color: green;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-left: 25%;
+    width: 50%;
+    transition: all 0.3s ease;
+   }
+
+   .signup a{
+    text-decoration: none;
+    color: white;
+   }
   
   .google-login button {
     background-color: #f44336;
